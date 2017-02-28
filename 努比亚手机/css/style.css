@@ -1,0 +1,581 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 1200px;
+    font-size: 12px;
+    color: #333;
+    font-family: "Microsoft YaHei", Arial;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/**********************************header start**************************/
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    vertical-align: middle;
+}
+
+.logo {
+    float: left;
+    margin-left: 5%;
+    margin-top: 18px;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 28%;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+nav a {
+    font-size: 16px;
+    color: #fff;
+    padding-right: 35px;
+}
+
+nav a:nth-of-type(3), nav a:hover, .login a:hover {
+    color: #e8340e;
+}
+
+.login {
+    height: 60px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    left: 3%;
+}
+
+.login i {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    left: -10px; /*图标位置调整*/
+    background: url("../images/sprite.png") no-repeat;
+}
+
+.login a {
+    color: #999;
+    line-height: 60px;
+    padding-left: 6px;
+}
+
+/**********************************header end**************************/
+/**********************************production start**************************/
+.production {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    padding-left: 10%;
+}
+
+.production ul {
+    text-align: center;
+}
+
+.production ul li {
+    float: left;
+    width: 11%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.production ul .move {
+    border-top: 2px solid #e8340e;
+    position: absolute;
+    left: 0;
+    top: 163px;
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.production ul li:nth-of-type(1):hover ~ .move {
+    left: 9%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(2):hover ~ .move {
+    left: 19%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(3):hover ~ .move {
+    left: 29%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(4):hover ~ .move {
+    left: 39%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(5):hover ~ .move {
+    left: 49%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(6):hover ~ .move {
+    left: 59%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(7):hover ~ .move {
+    left: 69%;
+    opacity: 1;
+}
+
+.production ul li:nth-of-type(8):hover ~ .move {
+    left: 79%;
+    opacity: 1;
+}
+
+.production ul li p {
+    color: #999;
+    padding-top: 4px;
+}
+
+.production ul li p span {
+    color: red;
+}
+
+/**********************************production end**************************/
+/**********************************banner start**************************/
+.banner {
+    width: 100%;
+    height: 600px;
+    background: url("../images/banner.jpg ") no-repeat center center;
+    cursor: pointer;
+}
+
+/**********************************banner end**************************/
+/**********************************video start**************************/
+.video {
+    margin: 7px auto 0;
+    width: 1200px;
+    height: 250px;
+}
+
+.video .img {
+    width: 33%;
+    height: 250px;
+    float: left;
+    text-align: center;
+}
+
+.video .img1 {
+    background: url("../images/news_p1.png") no-repeat;
+
+}
+
+.video .img2 {
+    background: url("../images/news_p2.png") no-repeat;
+    margin: 0 .5%;
+}
+
+.video .img3 {
+    background: url("../images/news_p3.png") no-repeat;
+}
+
+.video .play {
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 100%;
+    height: 250px;
+    color: #fff;
+    padding-top: 95px;
+    opacity: 0; /*默认隐藏不显示*/
+    transition: ease-in-out .3s;
+}
+
+.video .play h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.video .img:hover .play {
+    opacity: 1; /*鼠标悬停时显示*/
+    background-color: rgba(30, 30, 30, 0.6); /*背景透明度*/
+    visibility: visible;
+}
+
+/**********************************video end**************************/
+/**********************************new start**************************/
+.new {
+    width: 1200px;
+    height: 1341px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.new .newTitle {
+    width: 1200px;
+    height: 141px;
+    margin: 0 auto;
+    padding: 40px 0 30px;
+    box-sizing: border-box;
+}
+
+.new .newTitle h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.new .newTitle a {
+    color: #e8340e;
+}
+
+.new .showbox {
+    width: 1200px;
+}
+
+.new .showbox .top {
+    width: 1200px;
+    height: 395px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.new .showbox .top img {
+    position: absolute;
+    top: 100px;
+    left: 145px;
+    cursor: pointer;
+    transition: ease-in-out .6s; /*动画慢进慢出,时间为0.6s*/
+}
+
+.new .showbox .top img:hover {
+    transform: translate(30px);
+}
+
+.new .showbox .top .name {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
+
+.new .showbox .name h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.new .showbox .name p {
+    color: #666;
+}
+
+.new .showbox .name span {
+    width: 106px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    margin: 15px auto 0;
+    transition: ease-in-out .5s; /*动画慢进慢出,时间为0.5s*/
+}
+
+.new .showbox .name span:hover {
+    color: #e8340e;
+    border-color: #e8340e;
+    cursor: pointer;
+}
+
+.new .showbox .aside {
+    width: 395px;
+    height: 795px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+
+.new .showbox .aside img {
+    position: relative;
+    top: 80px;
+    transition: ease-in-out .6s; /*动画慢进慢出,时间为0.6s*/
+}
+
+.new .showbox .aside img:hover {
+    transform: scale(1.05); /*放大效果为1.05倍*/
+}
+
+.new .showbox .aside .name {
+    position: absolute;
+    top: 640px;
+    left: 125px;
+}
+
+.new .showbox .main_top {
+    width: 795px;
+    height: 390px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.new .showbox .main_top img {
+    position: absolute;
+    top: 45px;
+    right: -30px;
+    transition: ease-in-out .6s; /*动画慢进慢出,时间为0.6s*/
+}
+
+.new .showbox .main_top img:hover {
+    transform: translate(-30px); /*向左移动30px*/
+}
+
+.new .showbox .main_top .name {
+    position: relative;
+    top: 260px;
+}
+
+.new .showbox .main_bottom {
+    width: 392px;
+    height: 395px;
+    background-color: #fff;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.new .showbox .main_bottom img {
+    position: relative;
+    top: 40px;
+    transition: ease-in-out .6s; /*动画慢进慢出,时间为0.6s*/
+}
+
+.new .showbox .main_bottom img:hover {
+    transform: scale(1.1); /*放大效果为1.1倍*/
+}
+
+.new .showbox .main_bottom .name {
+    position: relative;
+    top: 50px;
+}
+
+.new .showbox .noMargin {
+    margin: 0;
+    width: 393px;
+}
+
+/**********************************new end**************************/
+/**********************************accessory start**************************/
+.accessory {
+    width: 1200px;
+    height: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.accessory .accessoryTitle {
+    width: 1200px;
+    height: 141px;
+    margin: 0 auto;
+    padding: 40px 0 30px;
+    box-sizing: border-box;
+}
+
+.accessory .accessoryTitle h2 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.accessory .accessoryTitle a {
+    color: #e8340e;
+}
+
+.accessory ul li {
+    float: left;
+    width: 291px;
+    height: 300px;
+    background-color: #fff;
+    margin-right: 12px;
+    position: relative;
+}
+
+.accessory ul li:last-of-type {
+    margin: 0;
+}
+
+.accessory ul li img {
+    position: relative;
+    top: 38px;
+    transition: ease-in-out .5s; /*动画慢进慢出,时间为0.6s*/
+}
+
+.accessory ul li img:hover {
+    transform: scale(1.1); /*放大效果为1.1倍*/
+    cursor: pointer;
+}
+
+.accessory ul li p {
+    color: #666;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%); /*绝对定位平移50%,再利用自身平移负方向50%达到不同长度元素的水平居中*/
+}
+
+/**********************************accessory end**************************/
+/**********************************footer start**************************/
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    padding: 40px 75px 0;
+    box-sizing: border-box;
+}
+
+.allPhone {
+    border-top: 1px solid #f1f1f1;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+
+.allPhone h3 {
+    color: #666;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 25px auto 30px;
+}
+
+.allPhone h3 i {
+    width: 14px;
+    height: 13px;
+    display: inline-block;
+    background: url("../images/sprite.png") no-repeat -15px -124px;
+}
+
+.allPhone dl {
+    float: left;
+    padding-right: 100px;
+}
+
+.allPhone dl dt {
+    margin-bottom: 8px;
+}
+
+.allPhone dl dd a {
+    color: #999;
+    line-height: 20px;
+}
+
+.allPhone dl dd a:hover {
+    color: #e8340e;
+}
+
+.info {
+    text-align: center;
+    color: #ccc;
+    padding: 0 85px;
+    position: relative;
+}
+
+.info .about {
+    float: left;
+}
+
+.info .about a {
+    color: #999;
+    padding: 0 10px;
+}
+
+.info .about a:hover {
+    color: #333;
+}
+
+.info .contact {
+    text-align: right;
+    font-size: 16px;
+    height: 30px;
+    position: absolute;
+    width: 350px;
+    left: 770px;
+}
+
+.info .contact span {
+    position: relative;
+    top: -18px;
+}
+
+.info .contact i {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    transition: ease-in-out .6s;
+}
+
+.info .contact .shopping {
+    background: url("../images/sprite.png") no-repeat -120px -54px;
+}
+
+.info .contact .shopping:hover {
+    cursor: pointer;
+    background: url("../images/sprite.png") no-repeat -120px -84px;
+}
+
+.info .contact .cloud {
+    background: url("../images/sprite.png") no-repeat -60px -54px;
+}
+
+.info .contact .cloud:hover {
+    cursor: pointer;
+    background: url("../images/sprite.png") no-repeat -60px -84px;
+}
+
+.info .contact .weibo {
+    background: url("../images/sprite.png") no-repeat 0 -54px;
+}
+
+.info .contact .weibo:hover {
+    cursor: pointer;
+    background: url("../images/sprite.png") no-repeat 0 -84px;
+}
+
+.info .contact .phone {
+    background: url("../images/sprite.png") no-repeat -90px -54px;
+}
+
+.info .contact .phone:hover {
+    cursor: pointer;
+    background: url("../images/sprite.png") no-repeat -90px -84px;
+}
+
+.copy {
+    padding: 20px 100px 0;
+    box-sizing: border-box;
+    color: #ccc;
+    width: 100%;
+    float: left;
+}
+
+.copy p span:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+/**********************************footer end**************************/

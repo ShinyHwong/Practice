@@ -1,0 +1,133 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+.container{
+    width: 1349px;
+    height: 941px;
+    font-size: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: "Microsoft YaHei";
+}
+/*********************************header**********************************/
+header{
+    width: 1349px;
+    height: 90px;
+    padding-top: 18px;
+    box-sizing: border-box;
+}
+header img{
+    margin-left: 180px;
+}
+header p{
+    float: right;
+    margin-right: 200px;
+    font-size: 12px;
+}
+header p span{
+    color: #f00;
+}
+/*********************************mainbody**********************************/
+.mainbody{
+    width: 1349px;
+    height: 782px;
+}
+.mainbody nav{
+    width: 1349px;
+    height: 41px;
+    background-color: #d81406;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.mainbody nav span{
+    padding: 0 27px;
+    height: 41px;
+    line-height: 41px;
+    display: inline-block;
+    position: relative;
+    top: -12px;
+    box-sizing: border-box;
+}
+.mainbody nav span:hover{
+    color: #8d080b;
+    cursor: pointer;
+}
+.mainbody nav img {
+    margin-top: 3px;
+}
+.mainbody .pic{
+    width: 1349px;
+    height: 383px;
+}
+.mainbody .content{
+    width: 1349px;
+    height: 358px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.mainbody .content h2{
+    font-size: 20px;
+    margin-top: 38px;
+    font-weight: normal;
+}
+.mainbody .content .product .photo{
+    display: inline-block;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.mainbody .content .product .photo:nth-of-type(2){
+    margin: 0 10px;
+}
+.mainbody .content .product .photo .description{
+    font-size: 16px;
+    width: 313px;
+    height: 36px;
+    background-color: #a8a8a8;
+    cursor: pointer;
+    color: #fff;
+}
+.mainbody .content .product .photo .description p{
+    float: left;
+    line-height: 36px;
+    padding-left: 10px;
+
+}
+.mainbody .content .product .photo .description img{
+    float: right;
+}
+.mainbody .content .link{
+    width: 1349px;
+    height: 12px;
+    margin-top: 46px;
+    text-align: center;
+    font-size: 12px;
+}
+.mainbody .content .link span{
+    color: #f00;
+}
+.mainbody .content .link a{
+    text-decoration: none;
+    color: #000;
+}
+.mainbody .content .link a:hover{
+    color: #f00;
+}
+/*********************************footer**********************************/
+footer{
+    width: 1349px;
+    height: 68px;
+    background-color: #393631;
+    position: relative;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 10px 194px;
+    font-size: 12px;
+    color: #a9a9a9;
+    line-height: 24px;
+}
+footer p a{
+    color: #3da2cc;
+    text-decoration: none;
+}

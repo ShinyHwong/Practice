@@ -1,0 +1,182 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #e5e5e5;
+}
+.container{
+    width: 960px;
+    height: 957px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-size: 0;
+    font-family: "Microsoft YaHei";
+}
+/******************************header******************************/
+header img{
+    width: 960px;
+    height: 147px;
+    border-bottom: 1px solid #1c75b7;
+}
+header .navigation{
+    width: 960px;
+    height: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background: linear-gradient(#188dd2, #1375be);
+    padding-left: 23px;
+}
+header .navigation span{
+    line-height: 28px;
+    color: #ff0;
+    font-size: 14px;
+    float: left;
+}
+header .navigation nav{
+    float:  right;
+    text-align: center;
+}
+header .navigation nav a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 6px;
+    height: 17px;
+    line-height: 17px;
+    width: 95px;
+    display: inline-block;
+    box-sizing: border-box;
+    border-left: 1px solid #7cc0ed;
+    border-right: 1px solid #0a5380;
+}
+header .navigation nav a:first-child{
+    border-left: none;
+}
+header .navigation nav a:hover{
+    color: #000;
+}
+/******************************mainbody******************************/
+.mainbody{
+    padding: 10px;
+    width: 960px;
+    height: 670px;
+    box-sizing: border-box;
+    border-top: 1px solid #1c75b7;
+    position: relative;
+}
+.mainbody::after{
+    content: "";
+    float: left;
+    width: 960px;
+    height: 60px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    background: linear-gradient(#d3f2f7, #fff);
+}
+.mainbody .aside{
+    width: 213px;
+    height: 670px;
+    background-color: #d3edfd;
+    position: absolute;
+    z-index: 10;
+}
+.mainbody .aside img{
+    cursor: pointer;
+}
+.mainbody .aside .function img{
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+.mainbody .aside .function img:first-child{
+    margin-top: 3px;
+}
+.mainbody .banner{
+    width: 710px;
+    height: 32px;
+    position: absolute;
+    left: 240px;
+    background-color: #f2f9ff;
+    font-size: 14px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 8px;
+    border-top: 1px solid #c5e4ff;
+    border-bottom: 3px solid #93caff;
+    z-index: 10;
+
+    -moz-border-bottom-colors: #93caff #c1e2ff #ddefff; /*火狐浏览器能显示渐变的下边框*/
+}
+.mainbody .banner img{
+    height: 12px;
+    margin-top: 5px;
+}
+.mainbody .banner span:hover{
+    color: #f00;
+    cursor: pointer;
+}
+.mainbody .content .page{
+    width: 710px;
+    font-size: 14px;
+    position: absolute;
+    left: 240px;
+    top: 60px;
+    box-sizing: border-box;
+}
+.mainbody .content .page p{
+    line-height: 27px;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+}
+.mainbody .content .page p img{
+    padding-bottom: 3px;
+    height: 4px;
+}
+.mainbody .content .page p:hover{
+    color: #f00;
+    cursor: pointer;
+}
+.mainbody .content .bottom{
+    width: 710px;
+    height: 30px;
+    background-color: #e7f1fa;
+    font-size: 12px;
+    line-height: 30px;;
+    position: absolute;
+    left: 240px;
+    top: 640px;
+    text-align: center;
+}
+.mainbody .content .bottom span:hover{
+    color: #f00;
+    cursor: pointer;
+}
+/******************************footer******************************/
+footer{
+    width: 960px;
+    height: 92px;
+    font-size: 12px;
+    text-align: center;
+}
+footer .line{
+    border-top: 4px solid #02457c;
+    width: 920px;
+    display: inline-block;
+    margin-top: 17px;
+}
+footer .about{
+    margin-top: 20px;
+    line-height: 20px;
+}
+footer .about span:hover{
+    color: #f00;
+    cursor: pointer;
+}
+footer hr{
+    border-top: 1px solid #02457c;
+    margin: 0 10px;
+}
