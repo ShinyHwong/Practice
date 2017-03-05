@@ -1,0 +1,1179 @@
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+}
+
+/***************************header start********************************/
+header {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+
+.topBanner {
+    width: 100%;
+    height: 120px;
+    background: url("../images/1-top/topBanner.jpg") no-repeat center center;
+    cursor: pointer;
+}
+
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+}
+
+.navCenter {
+    width: 1226px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.navCenter ul span {
+    color: #424242;
+    margin: 0 0.5em;
+}
+
+.navCenter ul {
+    float: left;
+}
+
+.navCenter ul li {
+    display: inline-block;
+}
+
+.navCenter ul li a {
+    color: #b0b0b0;
+    transition: all .5s;
+}
+
+.navCenter ul li a:hover, .navCenter .login .shoppingCart:hover {
+    color: #fff;
+}
+
+.navCenter .login {
+    float: right;
+}
+
+.navCenter .login .shoppingCart {
+    width: 120px;
+    height: 40px;
+    margin-left: 27px;
+    display: inline-block;
+    background-color: #424242;
+    text-align: center;
+    color: #b0b0b0;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.navCenter .login .shoppingCart i {
+    font-size: 20px;
+    line-height: 20px;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+
+/***************************header end********************************/
+/***************************logoNav start********************************/
+.logoNav {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: 22px;
+    float: left;
+    cursor: pointer;
+}
+
+.logoNav ul {
+    width: 820px;
+    margin-left: 230px;
+    line-height: 100px;
+}
+
+.logoNav ul li {
+    float: left;
+    height: 80px;
+    padding: 0 10px;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.logoNav ul li:hover {
+    border-bottom: 2px solid #ff6702;
+}
+
+.logoNav ul li a {
+    font-size: 16px;
+    color: #333;
+}
+
+.logoNav .search {
+    float: right;
+    line-height: 100px;
+    font-size: 0;
+    position: relative;
+    margin-top: 25px;
+}
+
+/*搜索栏热词*/
+.logoNav .search .hotwords {
+    width: 177px;
+    height: 0;
+    position: absolute;
+    background-color: red;
+    top: -25px;
+    right: 60px;
+    display: inline-block;
+    text-align: right;
+    z-index: 2;
+}
+
+.logoNav .search .hotwords a {
+    margin-left: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    background-color: #eeeeee;
+    color: #757575;
+    transition: all .2s;
+}
+
+.logoNav .search .hotwords a:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.logoNav .search input[type="search"] {
+    width: 240px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    line-height: 50px;
+    outline: 0;
+    padding: 0 10px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    right: 49px;
+    transition: all .2s;
+}
+
+.logoNav .search input[type="search"]:hover {
+    border-color: #b0b0b0;
+}
+
+.logoNav .search input[type="submit"] {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #e0e0e0;
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    color: #616161;
+    background-color: #fff;
+    line-height: 24px;
+    outline: 0;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.logoNav .search input[type="submit"]:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+/***************************logoNav end********************************/
+/***************************banner start********************************/
+.banner {
+    width: 1226px;
+    height: 460px;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/*轮播图无限滚动*/
+.bannerPic {
+    width: 7400px;
+    height: 460px;
+    animation: move 30s linear infinite 0s normal;
+}
+
+.bannerPic:hover {
+    animation-play-state: paused;
+}
+
+.bannerPic li {
+    width: 1226px;
+    height: 460px;
+    float: left;
+}
+
+.bannerDot {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+}
+
+.bannerDot span {
+    width: 6px;
+    height: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.bannerDot span:first-child, .bannerDot span:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+/*轮播图每张图停留时间为5.4s, 转换时间为0.6s*/
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+    18% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: -1226px;
+    }
+    38% {
+        margin-left: -1226px;
+    }
+    40% {
+        margin-left: -2452px;
+    }
+    58% {
+        margin-left: -2452px;
+    }
+    60% {
+        margin-left: -3678px;
+    }
+    78% {
+        margin-left: -3678px;
+    }
+    80% {
+        margin-left: -4904px;
+    }
+    98% {
+        margin-left: -4904px;
+    }
+    100% {
+        margin-left: -6130px;
+    }
+}
+
+.menu {
+    width: 234px;
+    height: 460px;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    background-color: #ff6700;
+}
+
+.menu ul li a {
+    color: #fff;
+    padding-left: 30px;
+    height: 42px;
+    line-height: 42px;
+}
+
+.menu ul li span {
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.banner .arrow {
+    width: 40px;
+    height: 70px;
+    margin-top: -35px;
+    font-size: 50px;
+    color: #757575;
+    position: absolute;
+    top: 50%;
+    transition: all .3s;
+    font-family: "iconfont" !important;
+    font-style: normal;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.banner .leftArrow {
+    left: 234px;
+}
+
+.banner .rightArrow {
+    right: 0;
+}
+
+.banner .arrow:hover {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+
+/***************************banner end********************************/
+/***************************suggest start********************************/
+.suggest {
+    width: 1226px;
+    height: 170px;
+    margin: 14px auto 26px;
+}
+
+.suggest .app {
+    width: 234px;
+    height: 170px;
+    float: left;
+    font-size: 12px;
+    text-align: center;
+    background-color: #5f5750;
+}
+
+.suggest .app li {
+    position: relative;
+    float: left;
+    width: 78px;
+    height: 85px;
+    padding: 18px 3px 0;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color .2s;
+    border-left: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    cursor: pointer;
+}
+
+.suggest .app li:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.suggest .app li i {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.suggest .suggestImg {
+    float: left;
+    margin-left: -1px;
+    width: 993px;
+    height: 170px;
+}
+
+.suggest .suggestImg li {
+    margin-left: 15px;
+    float: left;
+    width: 316px;
+    height: 170px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+}
+
+.suggest .suggestImg li img {
+    width: 316px;
+    height: 170px;
+}
+
+.suggest .suggestImg li:hover {
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 15px 30px;
+}
+
+/***************************suggest end********************************/
+/***************************star start********************************/
+.star {
+    width: 1226px;
+    height: 438px;
+    margin: 0 auto;
+}
+
+.star ul {
+    width: 1226px;
+    height: 340px;
+    margin-bottom: 40px;
+}
+
+.star ul li {
+    width: 234px;
+    height: 340px;
+    float: left;
+    background: #fafafa;
+    box-sizing: border-box;
+    padding-top: 39px;
+    margin-right: 14px;
+    text-align: center;
+    transition: all .6s;
+}
+
+.star ul li img {
+    width: 160px;
+    margin: 0 auto 22px;
+    cursor: pointer;
+}
+
+.star ul li .description h3 {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.star ul li .description p {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.star ul li .description h4 {
+    color: #ff6709;
+    font-weight: normal;
+}
+
+.star ul li:nth-child(1) {
+    border-top: 1px solid #ffac13;
+}
+
+.star ul li:nth-child(2) {
+    border-top: 1px solid #83c44e;
+}
+
+.star ul li:nth-child(3) {
+    border-top: 1px solid #2196f3;
+}
+
+.star ul li:nth-child(4) {
+    border-top: 1px solid #e53935;
+}
+
+.star ul li:nth-child(5) {
+    border-top: 1px solid #00c0a5;
+    margin-right: 0;
+}
+
+/***************************star end********************************/
+/***************************mainbody start********************************/
+
+.mainbody {
+    width: 100%;
+    height: 4700px;
+    padding-top: 60px;
+    background-color: #f5f5f5;
+}
+
+.smart, .collocation, .accessories, .peripheral {
+    width: 1226px;
+    height: 686px;
+    margin: 0 auto 22px;
+}
+
+.title p {
+    width: 89px;
+    height: 58px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+    line-height: 58px;
+    color: #424242;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.title p:hover {
+    color: #ff6700;
+}
+
+.title p:hover i {
+    color: #ff6700;
+}
+
+.title p i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 15px;
+    color: #b0b0b0;
+    margin-left: 10px;
+}
+
+.title {
+    width: 1226px;
+    height: 58px;
+    position: relative;
+}
+
+.title h2 {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    float: left;
+}
+
+.title .miniArrow {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-top: 17px;
+    color: #b0b0b0;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.title .miniArrow:hover {
+    color: #ff6700;
+    border: 1px solid #ff6700;
+}
+
+.title .other ul {
+    float: right;
+    height: 58px;
+}
+
+.title .other ul li {
+    float: left;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    margin: 14px 0 14px 30px;
+}
+
+.title .other ul li a {
+    padding-bottom: 3px;
+}
+
+.title .other ul li:first-child a, .title .other ul li a:hover {
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+.title .other ul li a {
+    color: #333;
+}
+
+.aside {
+    width: 234px;
+    height: 614px;
+    float: left;
+    transition: all .2s linear;
+}
+
+.aside ul li {
+    width: 234px;
+    height: 300px;
+    margin-bottom: 14px;
+    float: left;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.aside ul li img {
+    width: 234px;
+    height: 300px;
+}
+
+.list {
+    width: 992px;
+    height: 614px;
+    float: left;
+}
+
+.list li {
+    width: 234px;
+    height: 300px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    padding: 15px 20px 0;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.list .more {
+    background-color: #f5f5f5;
+    text-align: left;
+    padding: 0;
+}
+
+.list .more:hover {
+    z-index: 0;
+    box-shadow: none;
+    transform: none;
+}
+
+.list .more .moreTop, .list .more .moreBottom {
+    width: 234px;
+    height: 143px;
+    margin-bottom: 14px;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    transition: all .2s linear;
+}
+
+.list .more .moreTop .description {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.list .more .moreTop img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+
+.list .more .moreBottom p {
+    font-size: 18px;
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.list .more .moreBottom span {
+    font-size: 12px;
+    color: #b0b0b0;
+    position: absolute;
+    top: 75px;
+    left: 30px;
+}
+
+.list .more .moreBottom i {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-size: 50px;
+    color: #ff6700;
+    cursor: pointer;
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    transition: all .5s;
+}
+
+.list .more .moreBottom i:hover {
+    transform: scale(1.1);
+}
+
+.list li img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 18px;
+    cursor: pointer;
+}
+
+.list li h3 {
+    margin: 0 10px 2px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.list li p {
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size: 12px;
+    color: #b0b0b0;
+    overflow: hidden;
+}
+
+.list li h4 {
+    margin: 0 10px 14px;
+    color: #ff6700;
+    font-weight: normal;
+}
+
+.list li h4 span {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+/*附加提示词,打折,免邮,新品*/
+.flag {
+    display: inline-block;
+    width: 64px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -32px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.discount {
+    background-color: #e53935;
+}
+
+.freeShipping {
+    background-color: #ffac13;
+}
+
+.new {
+    background-color: #83c44e;
+}
+
+.smart .aside img {
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.forYou {
+    width: 1226px;
+    height: 358px;
+    margin: 0 auto 22px;
+}
+
+.forYou .singleList {
+    width: 1226px;
+    height: 300px;
+}
+
+.forYou .singleList li:first-child {
+    margin-left: 0;
+}
+
+.hot, .content {
+    width: 1226px;
+    height: 495px;
+    margin: 0 auto 22px;
+}
+
+.doubleList li {
+    width: 296px;
+    height: 415px;
+    background-color: #fff;
+    float: left;
+    margin-left: 14px;
+    text-align: center;
+    position: relative;
+    transition: all .2s;
+}
+
+.doubleList li:first-child {
+    margin-left: 0;
+}
+
+.hot .doubleList li img {
+    width: 296px;
+    height: 220px;
+    float: left;
+    cursor: pointer;
+}
+
+.hot .doubleList li .comment {
+    width: 296px;
+    height: 195px;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: left;
+}
+
+.hot .doubleList li .comment p:nth-child(1) {
+    height: 100px;
+    width: 100%;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.hot .doubleList li .comment p:nth-child(2) {
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-bottom: 5px;
+}
+
+.hot .doubleList li .comment p:nth-child(3) {
+    cursor: pointer;
+}
+
+.hot .doubleList li .comment p:nth-child(3) span {
+    color: #ff6700;
+}
+
+.content .doubleList li h5 {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.content .doubleList li h6 {
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.content .doubleList li p {
+    font-size: 12px;
+    height: 40px;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+
+.content .doubleList li span {
+    display: block;
+    font-weight: bold;
+    height: 15px;
+}
+
+.content .doubleList li img {
+    position: absolute;
+    top: 190px;
+    left: 42px;
+    cursor: pointer;
+}
+
+.content .doubleList li .dot {
+    height: 12px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.content .doubleList li .dot span {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #b0b0b0;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.content .doubleList li .dot span:first-child, .content .doubleList li .dot span:hover {
+    background-color: #fff;
+    border: 2px solid #ff6700;
+}
+
+.content .doubleList li:nth-child(1) {
+    border-top: 1px solid #ffac13;
+}
+
+.content .doubleList li:nth-child(1) h5 {
+    color: #ffac13;
+}
+
+.content .doubleList li:nth-child(2) {
+    border-top: 1px solid #83c44e;
+}
+
+.content .doubleList li:nth-child(2) h5 {
+    color: #83c44e;
+}
+
+.content .doubleList li:nth-child(3) {
+    border-top: 1px solid #e53935;
+}
+
+.content .doubleList li:nth-child(3) h5 {
+    color: #e53935;
+}
+
+.content .doubleList li:nth-child(4) {
+    border-top: 1px solid #2296f3;
+}
+
+.content .doubleList li:nth-child(4) h5 {
+    color: #2296f3;
+}
+
+.video {
+    width: 1226px;
+    height: 365px;
+    margin: 0 auto 22px;
+}
+
+.video ul li {
+    width: 296px;
+    height: 285px;
+    margin-left: 14px;
+    float: left;
+    background-color: #fff;
+    text-align: center;
+    transition: all .2s;
+}
+
+.video ul li:first-child {
+    margin-left: 0;
+}
+
+.video img {
+    width: 296px;
+    height: 180px;
+    cursor: pointer;
+}
+
+.video ul li h3 {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.video ul li p {
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+/*页面hover悬浮效果*/
+.list li:hover, .aside ul li:hover, .list .more > div:hover, .doubleList li:hover, .video ul li:hover, .smart .aside img:hover {
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translate3d(0, -2px, 0);
+}
+
+/***************************mainbody end********************************/
+
+/***************************footer start********************************/
+footer {
+    width: 100%;
+    height: 440px;
+    background-color: #fafafa;
+}
+
+.aboutBG {
+    width: 100%;
+    height: 272px;
+    background-color: #fff;
+}
+
+.about {
+    width: 1226px;
+    height: 272px;
+    margin: 0 auto;
+}
+
+.about .policy ul {
+    width: 1226px;
+    height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.about .policy ul li {
+    width: 243px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 27px;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    color: #616161;
+    border-right: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.about .policy ul li:last-child {
+    border: none;
+}
+
+.about .policy ul li i {
+    font-size: 30px;
+    margin-right: 5px;
+    vertical-align: -5px;
+}
+
+.about .policy ul li:hover {
+    color: #ff6700;
+}
+
+.about .survey {
+    width: 1226px;
+    height: 192px;
+    float: left;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+
+.about .survey dl {
+    float: left;
+    width: 160px;
+    height: 112px;
+}
+
+.about .survey dl dt {
+    width: 160px;
+    height: 17px;
+    margin-bottom: 26px;
+}
+
+.about .survey dl dd {
+    width: 160px;
+    height: 18px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.about .survey dl dd a {
+    color: #757575;
+}
+
+.about .survey dl dd a:hover {
+    color: #ff6700;
+}
+
+.about .survey .contact {
+    float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+
+.about .survey .contact h2 {
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #ff6700;
+    font-weight: normal;
+}
+
+.about .survey .contact p {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.about .survey .contact span {
+    width: 118px;
+    height: 28px;
+    display: inline-block;
+    border: 1px solid #ff6700;
+    background-color: #fff;
+    color: #ff6700;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.about .survey .contact span:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+.copy {
+    width: 1226px;
+    height: 57px;
+    margin: 30px auto;
+    box-sizing: border-box;
+}
+
+.copy .bottomLogo {
+    float: left;
+    margin-right: 10px;
+}
+
+.copy .link {
+    width: 750px;
+    height: 54px;
+    float: left;
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.copy .link a {
+    color: #757575;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.copy .link a:hover {
+    color: #ff6700;
+}
+
+.copy .verify {
+    width: 380px;
+    height: 28px;
+    float: right;
+    margin-top: 4px;
+}
+
+.copy .verify img {
+    width: 85px;
+    height: 28px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.slogan {
+    width: 267px;
+    height: 19px;
+    margin: 0 auto;
+}
+
+/***************************footer end********************************/

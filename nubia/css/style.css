@@ -15,7 +15,7 @@ a {
     text-decoration: none;
 }
 
-ul {
+ul, ol {
     list-style: none;
 }
 
@@ -159,8 +159,37 @@ nav a:nth-of-type(3), nav a:hover, .login a:hover {
     height: 600px;
     background: url("../images/banner.jpg ") no-repeat center center;
     cursor: pointer;
+    position: relative;
 }
-
+.banner ol{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -75px;
+    z-index: 2;
+}
+.banner ol li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.banner ol li span{
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #999999;
+    border: 2px solid transparent;
+    transition: all .2s;
+}
+.banner ol li:first-child span, .banner ol li:hover span{
+    border-color: #e8340e;
+    transform: scale(1.2);
+    background-color: transparent;
+}
 /**********************************banner end**************************/
 /**********************************video start**************************/
 .video {
@@ -201,8 +230,12 @@ nav a:nth-of-type(3), nav a:hover, .login a:hover {
     opacity: 0; /*默认隐藏不显示*/
     transition: ease-in-out .3s;
 }
-
+.video .play img{
+    animation: scale 2s .5s infinite;
+    transition: ease-in-out .3s;
+}
 .video .play h3 {
+    margin-top: 10px;
     font-size: 18px;
     font-weight: normal;
     line-height: 30px;
@@ -214,6 +247,23 @@ nav a:nth-of-type(3), nav a:hover, .login a:hover {
     visibility: visible;
 }
 
+@keyframes scale {
+    20%{
+        transform: scale(0.8);
+    }
+    40%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(0.9);
+    }
+    80%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 /**********************************video end**************************/
 /**********************************new start**************************/
 .new {
