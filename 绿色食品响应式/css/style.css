@@ -1,0 +1,261 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+body{
+    width: 100%;
+    background: #f8f8f8 url(../images/bg.jpg) no-repeat center top;
+    font-size: 12px;
+    color: #616161;
+}
+/**************************header start***********************/
+.header{
+    width: 980px;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 22px;
+    box-sizing: border-box;
+}
+.header h1{
+    width: 173px;
+    height: 75px;
+    float: left;
+}
+.header h1 a{
+    width: 173px;
+    height: 75px;
+}
+/**************************header end***********************/
+
+/**************************nav start***********************/
+.nav{
+    width: 980px;
+    height: 60px;
+    margin: 0 auto;
+}
+.nav span:nth-child(1){
+    width: 20px;
+    height: 60px;
+    float: left;
+    background: url("../images/nav-left.jpg") no-repeat;
+}
+.nav ul{
+    width: 940px;
+    height: 60px;
+    float: left;
+    background: url("../images/nav-center.jpg");
+}
+.nav ul li{
+    width: 104px;
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    text-align: center;
+    background: url("../images/nav-line.jpg") no-repeat right center;
+}
+.nav ul li:last-child{
+    background: none;
+}
+.nav ul li a{
+    color: #fff;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+.nav span:nth-child(3){
+    width: 20px;
+    height: 60px;
+    float: right;
+    background: url("../images/nav-right.jpg") no-repeat;
+}
+/**************************nav end***********************/
+
+/**************************banner start***********************/
+.banner{
+    width: 980px;
+    height: 382px;
+    margin: 0 auto;
+}
+.banner a{
+    width: 980px;
+    height: 382px;
+}
+/**************************banner end***********************/
+
+/**************************content start***********************/
+.content{
+    width: 980px;
+    height: 302px;
+    margin: 0 auto;
+}
+/*product*/
+.product{
+    width: 980px;
+    height: 92px;
+    padding: 7px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.product li{
+    width: 236px;
+    height: 84px;
+    float: left;
+    padding: 5px;
+    margin-right: 7px;
+    box-sizing: border-box;
+    background: url("../images/con-top-item.jpg") no-repeat;
+}
+.product li h2{
+    width: 226px;
+    height: 30px;
+}
+.product li h2 a{
+    display: inline-block;
+    width: 104px;
+    height: 30px;
+    background: url("../images/con-top-spirit.jpg") no-repeat;
+}
+.product li p{
+    margin-left: 45px;
+}
+.product li:nth-child(2) h2 a{
+    background: url("../images/con-top-spirit.jpg") no-repeat 0 -30px;
+}
+.product li:nth-child(3) h2 a{
+    background: url("../images/con-top-spirit.jpg") no-repeat 0 -60px;
+}
+.product li:nth-child(4) h2 a{
+    background: url("../images/con-top-spirit.jpg") no-repeat 5px -90px;
+}
+.product li:last-child{
+    margin-right: 0;
+}
+/*about*/
+.about{
+    width: 980px;
+    height: 210px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+.title{
+    width: 100%;
+    height: 70px;
+    float: left;
+}
+.title h3{
+    width: 185px;
+    height: 38px;
+    float: left;
+}
+.title a{
+    display: inline-block;
+    margin-top: 10px;
+    float: right;
+}
+.about_one{
+    width: 323px;
+    height: 210px;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    background: url("../images/con-down-line.jpg") no-repeat right center;
+}
+.about_one dl{
+    width: 303px;
+    height: 100%;
+    display: inline-block;
+}
+.about_one dl dt{
+    float: left;
+    height: 91px;
+    margin-right: 10px;
+}
+.about_one dl dd{
+    line-height: 20px;
+}
+.about_one dl dd a{
+    color: #008000;
+}
+.about_one dl dd a:hover{
+    text-decoration: underline;
+}
+.about_two{
+    width: 407px;
+    height: 210px;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    background: url("../images/con-down-line.jpg") no-repeat right center;
+}
+.about_two ul li{
+    width: 119px;
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+}
+.about_two ul li a{
+    color: #616161;
+}
+.about_two ul li a img{
+    border: 1px solid #ccc;
+}
+.about_three{
+    width: 250px;
+    height: 210px;
+    padding: 10px;
+    box-sizing: border-box;
+    float: left;
+}
+.about_three p{
+    line-height: 20px;
+}
+/**************************content end***********************/
+
+/**************************subNav start***********************/
+.subNav{
+    width: 980px;
+    height: 34px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 34px;
+    background: url("../images/sub-nav.jpg");
+}
+.subNav a{
+    color: #fff;
+}
+.subNav span{
+    color: #616161;
+}
+/**************************subNav end***********************/
+
+/**************************footer start***********************/
+.footer{
+    width: 100%;
+    height: 88px;
+    box-sizing: border-box;
+    background: url("../images/footer-bg.jpg");
+}
+.footer_in{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+.footer_in p{
+    float: left;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.footer_in h2 a{
+    width: 108px;
+    height: 51px;
+    margin-top: 20px;
+    float: right;
+}
+/**************************footer end***********************/
